@@ -52,7 +52,6 @@
 			},
 			// 点击跳转到商品详情页面
 			gotoDetail(item) {
-				console.log(item)
 				uni.navigateTo({
 					url: '/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id
 				})

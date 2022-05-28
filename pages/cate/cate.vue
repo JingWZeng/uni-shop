@@ -33,6 +33,7 @@
 </template>
 
 <script>
+	import badgeMix from '@/mixins/tabbar-badge'
 	export default {
 		data() {
 			return {
@@ -47,6 +48,7 @@
 				scrollTop: 0
 			};
 		},
+		mixins: [badgeMix],
 		onLoad() {
 			// 获取当前系统的信息
 			const sysInfo = uni.getSystemInfoSync()
